@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:foregroundTint="#2196F3"
+    tools:context=".ReservaFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnRetornoReserva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/btn_reserva"
+        android:focusable="true"
+        android:foregroundTint="#BA0036A3"
+        android:src="@android:drawable/ic_menu_revert"
+        app:circularflow_radiusInDP="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtview_tituloreserva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/ReservaTitulo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/img_reserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRetornoReserva" />
+
+    <ImageView
+        android:id="@+id/img_reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/imagenreserva"
+        android:src="@drawable/img_reserva"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_detallepago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_tituloreserva" />
+
+    <TextView
+        android:id="@+id/txtview_detallepago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Detallesdetureserva"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_codigoreserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_reserva" />
+
+    <TextView
+        android:id="@+id/txtview_codigoreserva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Codigo"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_nombre"
+        app:layout_constraintEnd_toStartOf="@+id/txt_codigoreserva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_detallepago" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_codigoreserva"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="4dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtview_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_detallepago"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtview_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_restaurante"
+        app:layout_constraintEnd_toStartOf="@+id/txt_nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_codigoreserva" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_restaurante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtview_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/txt_codigoreserva"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtview_restaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Restaurante"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_fecha"
+        app:layout_constraintEnd_toStartOf="@+id/txt_restaurante"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_nombre" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_restaurante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="4dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtview_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombre"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtview_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Fecha"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_hora"
+        app:layout_constraintEnd_toStartOf="@+id/txt_fecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_restaurante" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_fecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="4dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_hora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtview_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/txt_restaurante"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtview_hora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Hora"
+        app:layout_constraintBottom_toTopOf="@+id/txtview_personas"
+        app:layout_constraintEnd_toStartOf="@+id/txt_hora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fecha" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_hora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_personas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtview_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fecha"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtview_personas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/Personas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txt_personas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtview_hora" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txt_personas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="4dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_reserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtview_restaurante"
+        app:layout_constraintTop_toBottomOf="@+id/txt_hora"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btn_reserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CompartirReserva"
+        app:layout_constraintBottom_toTopOf="@+id/btn_editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_personas" />
+
+    <Button
+        android:id="@+id/btn_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/EditarReserva"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_reserva" />
+
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CancerlarReserva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_editar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
