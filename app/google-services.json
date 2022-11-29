@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688492604904",
+    "project_id": "saborcriolloapp",
+    "storage_bucket": "saborcriolloapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688492604904:android:abfb33e8f342d4245a485d",
+        "android_client_info": {
+          "package_name": "com.example.proyectosaborcriollo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688492604904-75to3hglutmhilbgpqtaf9sc81s6ocrs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw2aeZY0skgVDIQvkcsB7hUtrxyN5ybHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688492604904-75to3hglutmhilbgpqtaf9sc81s6ocrs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
