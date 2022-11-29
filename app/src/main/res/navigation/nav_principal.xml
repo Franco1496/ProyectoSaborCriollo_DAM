@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragment_login"
-        android:name="com.example.proyectosaborcriollo.fragment_login"
+        android:name="com.example.proyectosaborcriollo.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
