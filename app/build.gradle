@@ -4,6 +4,8 @@ plugins {
     id 'androidx.navigation.safeargs.kotlin'
     id 'kotlin-kapt'
 
+    id 'com.google.gms.google-services'
+
 }
 
 android {
@@ -69,6 +71,14 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
     //
 
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:31.1.0')
+
+
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4"
+
+
 }
-
-

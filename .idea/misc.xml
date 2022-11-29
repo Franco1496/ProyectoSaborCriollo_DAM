@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1775" />
         <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1775" />
         <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/layout/fragment_confirmacion.xml" value="0.25" />
+=======
+        <entry key="..\:/DAM_PROY/ProyectoSaborCriollo_DAM/app/src/main/res/layout/fragment_login.xml" value="0.17074275362318841" />
+        <entry key="..\:/DAM_PROY/ProyectoSaborCriollo_DAM/app/src/main/res/layout/fragment_registro.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/layout/activity_main.xml" value="0.14492753623188406" />
+        <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/layout/fragment_confirmacion.xml" value="0.36666666666666664" />
+>>>>>>> e401e5aa379c9469059b50235adc7d862756be39
         <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/layout/fragment_pago.xml" value="0.4" />
         <entry key="..\:/Users/franq/Desktop/Proyecto_BackUp/app/src/main/res/layout/fragment_pedido.xml" value="0.22644927536231885" />
