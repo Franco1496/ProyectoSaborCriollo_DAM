@@ -88,10 +88,14 @@
     <string name="Sub_total">Sub-Total</string>
     <string name="IGV">I.G.V:</string>
     <string name="TotalVentas">Total de ventas</string>
-    <string name="MetodoDePago">Método de pago</string>
+    <string name="MetodoDePago">Método de pago:</string>
     <string name="btn_ConfimarPago">Confirmar Pago</string>
     <string name="btn_AnularPago">Anular Pago</string>
     <string name="men_criollo_l_v_precio_s_12_90">Menú criollo (L-V) Precio: S/.12.90</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="total">Total:</string>
+
 </resources>

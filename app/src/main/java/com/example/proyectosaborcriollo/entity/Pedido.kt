@@ -3,10 +3,11 @@ package com.example.proyectosaborcriollo.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
-import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "tb_Pedido",
+
+   /*
     foreignKeys = [
         ForeignKey(entity = Cliente::class,
             parentColumns = ["name"],
@@ -20,7 +21,9 @@ import androidx.room.PrimaryKey
         ForeignKey(entity = Ubigeo::class,
             parentColumns = ["name"],
             childColumns = ["cod_Ubigeo"])
-    ])
+    ]
+    */)
+
  class Pedido(
     @PrimaryKey
     @ColumnInfo(name = "idPedido")

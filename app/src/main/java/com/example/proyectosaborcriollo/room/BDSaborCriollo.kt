@@ -18,15 +18,18 @@ import com.example.proyectosaborcriollo.entity.*
                 Producto::class,
                 Reserva::class,
                 TipoComprobante::class,
+                DetallePago::class,
                 TipoPedido::class,
                 TipoDocumento::class,
                 MetodoPago::class,
                 PrecioDelivery::class,
                 Ubigeo::class,
-                Usuario::class], version = 1
+                Usuario::class], version = 3
+
 )
 abstract class BDSaborCriollo : RoomDatabase(){
-    abstract fun pedidoDao(): PedidoDAO
+
+        abstract fun depago(): DetallePagoDao
 
 
 
@@ -34,9 +37,12 @@ abstract class BDSaborCriollo : RoomDatabase(){
         private var INSTANCE: BDSaborCriollo?=null
         fun getBaseDatos(context: Context):BDSaborCriollo{
             return INSTANCE ?: synchronized(this){
-                val instance = Room.databaseBuilder(context, BDSaborCriollo::class.java, "saborcriollo").build()
+                val instance = Room.databaseBuilder(context, BDSaborCriollo::class.java, "bd_saborcriollo").
+                fallbackToDestructiveMigration().build()
+
                 INSTANCE = instance
                 instance
+
             }
         }
     }

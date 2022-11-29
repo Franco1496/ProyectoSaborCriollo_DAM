@@ -1,4 +1,12 @@
 package com.example.proyectosaborcriollo.viewmodel
 
-class DetallePagoApplication {
+import android.app.Application
+import com.example.proyectosaborcriollo.repository.DetallePagoRepositorio
+import com.example.proyectosaborcriollo.room.BDSaborCriollo
+
+class DetallePagoApplication: Application() {
+
+    val bd by lazy { BDSaborCriollo.getBaseDatos(this) }
+
+    val repo by lazy { DetallePagoRepositorio(bd.depago()) }
 }

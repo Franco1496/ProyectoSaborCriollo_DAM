@@ -1,16 +1,18 @@
 package com.example.proyectosaborcriollo.entity
 
 
-import androidx.room.*
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-@Entity(tableName = "tb_Producto",
+@Entity(tableName = "tb_Producto" /*,
     foreignKeys = [
         ForeignKey(entity = Categoria::class,
             parentColumns = ["name"],
             childColumns = ["idCategoria"])
     ],
     indices = [
-        Index(value = ["idCategoria"])])
+        Index(value = ["idCategoria"])] */)
 class Producto (
     @PrimaryKey
     @ColumnInfo(name = "idProducto")

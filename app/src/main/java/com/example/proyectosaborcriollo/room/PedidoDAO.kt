@@ -1,12 +1,10 @@
 package com.example.proyectosaborcriollo.room
 
-import androidx.room.*
-import kotlinx.coroutines.flow.Flow
-import com.example.proyectosaborcriollo.entity.Pedido
+import androidx.room.Dao
 
 
 @Dao
-interface PedidoDAO {
+interface PedidoDAO {/*
     @Query("select *from tb_Pedido")
     fun obtenerPedido(): Flow<List<Pedido>>
 
@@ -33,4 +31,6 @@ interface PedidoDAO {
 
     @Query("delete from tb_pedido where idPedido= :idPedido")
     fun EliminarPedido(idPedido:Int): Pedido
+
+    */
 }

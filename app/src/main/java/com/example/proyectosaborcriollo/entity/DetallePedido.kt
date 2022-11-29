@@ -1,8 +1,10 @@
 package com.example.proyectosaborcriollo.entity
 
-import androidx.room.*
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-@Entity(tableName = "tb_DetallePedido",
+@Entity(tableName = "tb_DetallePedido"/*,
         foreignKeys = [
             ForeignKey(entity = Pedido::class,
                         parentColumns = ["name"],
@@ -20,7 +22,7 @@ import androidx.room.*
         indices = [
             Index(value = ["idPedido"]),
             Index(value = ["idProducto"]),
-            Index(value = ["idPrecio"])])
+            Index(value = ["idPrecio"])] */)
 class DetallePedido (
     @PrimaryKey
     @ColumnInfo(name = "idDetallePedido")

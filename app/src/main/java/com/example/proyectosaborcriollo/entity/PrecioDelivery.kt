@@ -3,15 +3,14 @@ package com.example.proyectosaborcriollo.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
-import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "tb_PrecioDelivery",
+@Entity(tableName = "tb_PrecioDelivery"/*,
     foreignKeys = [
         ForeignKey(entity = Ubigeo::class,
             parentColumns = ["name"],
             childColumns = ["cod_Ubigeo"])
-    ])
+    ]*/)
 class PrecioDelivery (
     @PrimaryKey
     @ColumnInfo(name = "idDelivery")

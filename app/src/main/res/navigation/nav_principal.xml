@@ -46,6 +46,9 @@
         <action
             android:id="@+id/action_pagoFragment_to_pedidoFragment"
             app:destination="@id/pedidoFragment" />
+        <action
+            android:id="@+id/action_pagoFragment_to_confirmacionFragment"
+            app:destination="@id/confirmacionFragment" />
     </fragment>
     <fragment
         android:id="@+id/reservaFragment"
@@ -55,5 +58,14 @@
         <action
             android:id="@+id/action_reservaFragment_to_pedidoFragment"
             app:destination="@id/pedidoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmacionFragment"
+        android:name="com.example.proyectosaborcriollo.ConfirmacionFragment"
+        android:label="fragment_confirmacion"
+        tools:layout="@layout/fragment_confirmacion" >
+        <action
+            android:id="@+id/action_confirmacionFragment_to_pagoFragment"
+            app:destination="@id/pagoFragment" />
     </fragment>
 </navigation>
