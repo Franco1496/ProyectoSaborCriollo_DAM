@@ -14,6 +14,14 @@ class UsuarioRepositorio {
         } catch (throwable: Throwable) {
             false
         }
+    }
 
+    suspend fun registrarUsuario(usuario: String, contrasena: String): Boolean {
+        return try {
+            firebaseAuth.createUserWithEmailAndPassword(usuario, contrasena).await()
+            true
+        } catch (throwable: Throwable) {
+            false
+        }
     }
 }
